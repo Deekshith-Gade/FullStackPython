@@ -1,19 +1,19 @@
-# from abc import ABC, abstractmethod
-# class Vehile(ABC):
-#     @abstractmethod
-#     def start_engine(self):
-#         pass
-#     @abstractmethod
-#     def stop_engine(self):
-#         pass
-# class Car(Vehile):
-#     def start_engine(self):
-#         print("car engine started")
-#     def stop_engine(self):
-#         print("car engine stopped")
-# m=Car()
-# m.start_engine()
-# m.stop_engine()
+from abc import ABC, abstractmethod
+class Vehile(ABC):
+    @abstractmethod
+    def start_engine(self):
+        pass
+    @abstractmethod
+    def stop_engine(self):
+        pass
+class Car(Vehile):
+    def start_engine(self):
+        print("car engine started")
+    def stop_engine(self):
+        print("car engine stopped")
+m=Car()
+m.start_engine()
+m.stop_engine()
 
 from abc import ABC, abstractmethod
 

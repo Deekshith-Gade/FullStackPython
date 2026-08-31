@@ -1,34 +1,34 @@
-# class BankAccount:
-#     def __init__(self, name, balance):
-#         self.name = name               # public attribute
-#         self.__balance = balance       # private attribute (encapsulated)
+class BankAccount:
+    def __init__(self, name, balance):
+        self.name = name               # public attribute
+        self.__balance = balance       # private attribute (encapsulated)
         
-#     # Public method to display balance
-#     def show_balance(self):
-#         print(f"{self.name}, your balance is ₹{self.__balance}")
+    # Public method to display balance
+    def show_balance(self):
+        print(f"{self.name}, your balance is ₹{self.__balance}")
         
-#     # Public method to deposit money
-#     def deposit(self, amount):
-#         if amount > 0:
-#             self.__balance += amount
-#             print(f"₹{amount} deposited successfully.")
-#         else:
-#             print("Invalid deposit amount.")
+    # Public method to deposit money
+    def deposit(self, amount):
+        if amount > 0:
+            self.__balance += amount
+            print(f"₹{amount} deposited successfully.")
+        else:
+            print("Invalid deposit amount.")
             
-#     # Public method to withdraw money
-#     def withdraw(self, amount):
-#         if 0 < amount <= self.__balance:
-#             self.__balance -= amount
-#             print(f"₹{amount} withdrawn successfully.")
-#         else:
-#             print("Insufficient balance or invalid amount.")
+    # Public method to withdraw money
+    def withdraw(self, amount):
+        if 0 < amount <= self.__balance:
+            self.__balance -= amount
+            print(f"₹{amount} withdrawn successfully.")
+        else:
+            print("Insufficient balance or invalid amount.")
 
-# account = BankAccount("Deekshith", 50000)
+account = BankAccount("Deekshith", 50000)
 
-# account.show_balance()     #Access through method
-# account.deposit(20000)
-# account.withdraw(10000)
-# account.show_balance()
+account.show_balance()     #Access through method
+account.deposit(20000)
+account.withdraw(10000)
+account.show_balance()
 
 
 class BankAccount:
