@@ -31,6 +31,9 @@ print(soup.p.text)
 
 
 
+
+
+
 import requests
 from bs4 import BeautifulSoup
 url = "https://codegnan.com"
